@@ -27,4 +27,8 @@ Simple Solitaire logic to automatic play android card game
 - Open main.py and Run
   
 
-https://github.com/user-attachments/assets/0d9cc1b4-9d36-46d3-bff7-c4887e1da899
+
+
+
+https://github.com/user-attachments/assets/b94f5241-e459-4b29-8fa3-c3ed7116d0f9
+
