@@ -1,32 +1,56 @@
 # Android_Solitaire_Bot
-Simple Solitaire logic to automatic play android card game
 
-# Requirements
-- Microsoft Windows 10
-- Python 3.13 or newer version
-- Android Platform SDK Tools
-- Android Phone with resolution of 720 x 1600
+An automated bot that plays the Solitaire card game on Android devices using simple game logic and computer vision.
 
-# Installation
-- Install Python 3.13 or latest version from official website: https://www.python.org/downloads
-- Make sure to add python to PATH
-- Install required python libraries for this project by running this in terminal:
-  pip install -r requirements.txt
+---
 
-- Download Android Platform SDK Tools for Windows from official website: https://developer.android.com/tools/releases/platform-tools
-- Upzip android platform sdk tools zip file in your work folder
-- copy android_bridge.dll into the android sdk tools folder
-- Connect android phone to your PC via USB cable
-- Enable Developer options and USB Debugging option on the android phone
-- fix AndroidBridgePath and AndroidBridgeLib in game_ui.py as your folder path
-- Install Solitaire - Classic Card Games from Google Play Store(https://play.google.com/store/apps/details?id=com.mobilityware.solitaire&hl=en)
-  
-# Running
-- Make sure your android phone screen resolution is 720 x 1600
-- Run the Solitaire app on your android phone
-- Open main.py and Run
-  
+## Requirements
 
+- Windows 10  
+- Python 3.13 or later  
+- Android Platform SDK Tools  
+- Android phone with a screen resolution of **720 x 1600**
+
+---
+
+## Installation
+
+1. **Install Python**  
+   Download and install Python 3.13 or the latest version from the official website:  
+   [https://www.python.org/downloads](https://www.python.org/downloads)  
+   > ✅ Make sure to add Python to your PATH during installation.
+
+2. **Install project dependencies**  
+   Open a terminal and run:
+   ```bash
+   pip install -r requirements.txt
+
+3. **Download Android SDKK Platform Tools**
+   Download from:
+   [https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)
+   Extract the ZIP file into your working directory.
+
+4. **Add android_bridge.dll**
+   Copy `android_bridge.dll` into the extracted SDK tools folder.
+
+5. **Prepare your Android phone**
+   - Connect your phone to the PC via USB
+   - Enable Developer Options and USB Debugging
+
+6. **Update configuration paths**
+   - In `game_ui.py`, set the correct paths for:
+   ```bash
+   AndroidBridgePath = "path/to/your/platform-tools"
+
+7. Install the Solitaire game on your phone
+   [Solitaire - Classic Card Games (Google Play Store)](https://play.google.com/store/apps/details?id=com.mobilityware.solitaire)
+
+## Running the Bot
+1. Ensure your Android phone’s screen resolution is 720 x 1600.
+2. Launch the Solitaire app on the phone.
+3. Run the bot by executing:
+   ```bash
+   python main.py
 
 
 
