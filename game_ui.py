@@ -12,6 +12,7 @@ import numpy as np
 import platform
 from  ctypes import *
 from PIL import Image
+import logging
 
 class GameUI:
     time_delay=0.01
@@ -26,12 +27,15 @@ class GameUI:
     AndroidBridgeLib = AndroidBridgePath + '/android_bridge.dll'
 
     def __init__(self):
+        logfilename = self.AndroidBridgePath + '/solitaire_bot_log.txt'
+        logging.basicConfig(filename=logfilename, encoding='utf-8', format='%(asctime)s : %(levelname)s : %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
         print('Wait for few seconds connecting phone...')
-        
+        logging.info('Wait for few seconds connecting phone...')
         self.lib = cdll.LoadLibrary(self.AndroidBridgeLib)
         readyFlag = self.lib.android_bridge_init(self.AndroidBridgePath.encode('ASCII'))
         if not readyFlag:
             print('No devices connected.')
+            logging.error('No devices connected.')
             exit(0)
         
         cmdstr = ' shell monkey -p com.smilerlee.klondike -c android.intent.category.LAUNCHER 1'
@@ -126,10 +130,12 @@ class GameUI:
                                 break
                         if cardFound == False:
                             print("Could not find card with index:" + str(indOfLastRenderedCard+1) + ". Trying again...")
+                            logging.error("Could not find card with index:" + str(indOfLastRenderedCard+1) + ". Trying again...")
                             tryCount += 1
 
                     if cardFound == False:
                         print("Card not found.. initialization")
+                        logging.error("Card not found.. initialization")
                         self.gs.ui_components_to_render['top_deck'] = []
                         self.gs.ui_components_to_render['columns'] = [1,2,3,4,5,6,7]
                         #exit(0)
@@ -180,6 +186,7 @@ class GameUI:
         ret = self.lib.android_screen_capture()
         if not ret:
             print('Cannot capture screenshot of the phone.')
+            logging.error('Cannot capture screenshot of the phone.')
 
         img = cv2.imread('D://platform-tools//screenshot.png')
         self.Screenshot = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
@@ -197,6 +204,7 @@ class GameUI:
             else:
                 # Draw new card if possible
                 print("Drawing a new card")
+                logging.info("Drawing a new card")
                 self.findImgAndClick('draw_deck_card.png')
                 
                 cardsRendered = self.GetCardsFromRegion(self.gv.drawDeckArea[0], self.gv.drawDeckArea[1],
@@ -238,6 +246,7 @@ class GameUI:
                     currNewCardsInColumn.append(self.gs.new_cards_in_column[i])
                 else:
                     print("Rendering Column " + str(i+1))
+                    logging.info("Rendering Column " + str(i+1))
                     cardsRendered = self.GetCardsFromRegion_1(left, top, left+self.gv.columnWidth, down, 0.95, "Capture Column Cards", True)            
                     crdToAdd = []
                     if len(cardsRendered) > 0:
@@ -315,16 +324,20 @@ class GameUI:
 
     def ProcessAction(self, a):
         print("Processing action: " + a.name)
+        logging.info("Processing action: " + a.name)
         print(a.cards)
+        logging.info(a.cards)
         #return
         
         if self.findImage('NewGame.png'):
             print('---------------------- Congratulation !!! --------------------')
+            logging.info('---------------------- Congratulation !!! --------------------')
             return False
         if a.name == 'DrawNewCard':
             self.DecCount = self.DecCount + 1
             if self.DecCount > 8:
                 print('Game Logic has been stuck!!!')
+                logging.warning('Game Logic has been stuck!!!')
                 self.gs.ui_components_to_render['top_deck'] = []
                 self.gs.ui_components_to_render['draw_deck'] = []
                 self.gs.ui_components_to_render['columns'] = [1,2,3,4,5,6,7]
@@ -335,6 +348,7 @@ class GameUI:
         elif a.name == 'MoveCardToDeck':
             self.DecCount = 0
             print(a.cards[0])
+            logging.info(a.cards[0])
             cmdstr = 'shell input tap ' + str(a.cards[0][1]) + ' ' + str(a.cards[0][2])
             self.lib.android_bridge_cmd(cmdstr.encode('ASCII'))
 
@@ -421,6 +435,7 @@ class GameUI:
         ret = self.lib.android_screen_capture()
         if not ret:
             print('Cannot capture screenshot of the phone.')
+            logging.error('Cannot capture screenshot of the phone.')
 
         img = cv2.imread('D://platform-tools//screenshot.png')
         self.Screenshot = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
@@ -455,3 +470,7 @@ class GameUI:
 
     def r(self, num, rand):
         return num + rand * random.random()
+
+    def log_info(self, str):
+        print(str)
+        logging.info(str)

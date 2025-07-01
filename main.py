@@ -9,14 +9,14 @@ gui.focusOnEmulatorScreen()
 
 #print('test')
 while 1:
-    print("Updating Game State")
+    gui.log_info("Updating Game State")
 
     gui.UpdateGameState()
     
-    print("Calculating Action")
+    gui.log_info("Calculating Action")
     next_action = gl.GetNextAction(gui.gs, gui.gv)
-    print("Action: " + next_action.name)
-    print(next_action.cards)
+    gui.log_info("Action: " + next_action.name)
+    gui.log_info(next_action.cards)
     
     if not gui.ProcessAction(next_action):
         break
@@ -26,4 +26,4 @@ while 1:
         break
 
     
-print('Game bot has been stopped.')
+gui.log_info('Game bot has been stopped.')
