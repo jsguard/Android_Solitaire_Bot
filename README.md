@@ -55,5 +55,9 @@ An automated bot that plays the Solitaire card game on Android devices using sim
 
 
 
-https://github.com/user-attachments/assets/05bbb6c6-208a-4962-b346-c3abc3893132
+https://github.com/user-attachments/assets/31bc60cd-9393-4b89-a5df-42173be71de6
+
+
+
+
 
