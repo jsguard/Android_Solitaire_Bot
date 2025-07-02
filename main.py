@@ -7,7 +7,6 @@ gl = GameLogic()
 gui = GameUI()
 gui.focusOnEmulatorScreen()
 
-#print('test')
 while 1:
     gui.log_info("Updating Game State")
 

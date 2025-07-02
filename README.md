@@ -43,7 +43,7 @@ An automated bot that plays the Solitaire card game on Android devices using sim
    AndroidBridgePath = "path/to/your/platform-tools"
 
 7. Install the Solitaire game on your phone
-   [Solitaire - Classic Card Games (Google Play Store)](https://play.google.com/store/apps/details?id=com.mobilityware.solitaire)
+   [Solitaire - Classic Card Games (Google Play Store)](https://play.google.com/store/apps/details?id=com.smilerlee.klondike&hl=en)
 
 ## Running the Bot
 1. Ensure your Android phone’s screen resolution is 720 x 1600.

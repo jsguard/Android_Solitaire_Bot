@@ -189,6 +189,7 @@ class GameUI:
             logging.error('Cannot capture screenshot of the phone.')
 
         img = cv2.imread('D://platform-tools//screenshot.png')
+        
         self.Screenshot = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
                 
         #############################
