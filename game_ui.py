@@ -27,7 +27,7 @@ class GameUI:
     AndroidBridgeLib = AndroidBridgePath + '/android_bridge.dll'
 
     def __init__(self):
-        logfilename = self.AndroidBridgePath + '/solitaire_bot_log.txt'
+        logfilename = 'solitaire_bot_log.txt'
         logging.basicConfig(filename=logfilename, encoding='utf-8', format='%(asctime)s : %(levelname)s : %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
         print('Wait for few seconds connecting phone...')
         logging.info('Wait for few seconds connecting phone...')
@@ -188,7 +188,9 @@ class GameUI:
             print('Cannot capture screenshot of the phone.')
             logging.error('Cannot capture screenshot of the phone.')
 
-        img = cv2.imread('D://platform-tools//screenshot.png')
+        imgfile = self.AndroidBridgePath + '/screenshot.png'
+
+        img = cv2.imread(imgfile)
         
         self.Screenshot = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
                 
@@ -438,7 +440,9 @@ class GameUI:
             print('Cannot capture screenshot of the phone.')
             logging.error('Cannot capture screenshot of the phone.')
 
-        img = cv2.imread('D://platform-tools//screenshot.png')
+        imgfile = self.AndroidBridgePath + '/screenshot.png'
+        img = cv2.imread(imgfile)
+
         self.Screenshot = Image.fromarray(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
         
     '''
