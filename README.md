@@ -20,29 +20,23 @@ An automated bot that plays the Solitaire card game on Android devices using sim
    [https://www.python.org/downloads](https://www.python.org/downloads)  
    > ✅ Make sure to add Python to your PATH during installation.
 
-2. **Install project dependencies**  
+2. **Download Android SDK Platforms and Link Android Bridge**  
+   Open Git Bash, a [Bash Terminal emulator](https://git-scm.com/download/win)
+
+   Note: Bash scripts are not natively supported on Windows. However, if you have Git installed on your system, you can use Git Bash, which provides a Unix-like terminal environment that supports Bash scripting. You can launch Git Bash from the Start menu or by right-clicking in a folder and selecting "Open Git Bash Here."
+
+   Run:
+   ```bash
+   ./install.sh
+3. **Install project dependencies**  
    Open a terminal and run:
    ```bash
    pip install -r requirements.txt
-
-3. **Download Android SDKK Platform Tools**
-   Download from:
-   [https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)
-   Extract the ZIP file into your working directory.
-
-4. **Add android_bridge.dll**
-   Copy `android_bridge.dll` into the extracted SDK tools folder.
-
-5. **Prepare your Android phone**
+4. **Prepare your Android phone**
    - Connect your phone to the PC via USB
    - Enable Developer Options and USB Debugging
 
-6. **Update configuration paths**
-   - In `game_ui.py`, set the correct paths for:
-   ```bash
-   AndroidBridgePath = "path/to/your/platform-tools"
-
-7. Install the Solitaire game on your phone
+5. Install the Solitaire game on your phone
    [Solitaire - Classic Card Games (Google Play Store)](https://play.google.com/store/apps/details?id=com.smilerlee.klondike&hl=en)
 
 ## Running the Bot
@@ -51,10 +45,7 @@ An automated bot that plays the Solitaire card game on Android devices using sim
 3. Run the bot by executing:
    ```bash
    python main.py
-
-
-
-
+## Demo Video
 https://github.com/user-attachments/assets/31bc60cd-9393-4b89-a5df-42173be71de6
 
 

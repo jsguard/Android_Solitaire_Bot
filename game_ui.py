@@ -23,7 +23,8 @@ class GameUI:
     DecCount = 0
     lib = None
     Screenshot = None
-    AndroidBridgePath = 'D:/platform-tools'
+    current_directory = os.getcwd()
+    AndroidBridgePath = current_directory + '/platform-tools'
     AndroidBridgeLib = AndroidBridgePath + '/android_bridge.dll'
 
     def __init__(self):
