@@ -180,8 +180,17 @@ class GameUI:
     #######################################
 
     def UpdateGameState(self):
-        # Render game state
+        cmdstr = 'shell wm size'
+        retB = self.lib.android_bridge_cmd(cmdstr.encode('ASCII'))
+        if retB:
+            print('Image size checking has been done.')
+            logging.info('Image size checking has been done.')
+        else:
+            print('Image size checking has been skipped.')
+            logging.info('Image size checking has been skipped.')
 
+
+        # Render game state
         self.focusOnEmulatorScreen()
 
         ret = self.lib.android_screen_capture()
@@ -342,15 +351,6 @@ class GameUI:
             if self.DecCount > 8:
                 print('Game Logic has been stuck!!!')
                 logging.warning('Game Logic has been stuck!!!')
-                cmdstr = 'shell wm size'
-                retB = self.lib.android_bridge_cmd(cmdstr.encode('ASCII'))
-                if retB:
-                    print('Image size checking has been done.')
-                    logging.info('Image size checking has been done.')
-                else:
-                    print('Image size checking has been skipped.')
-                    logging.info('Image size checking has been skipped.')
-
                 self.gs.ui_components_to_render['top_deck'] = []
                 self.gs.ui_components_to_render['draw_deck'] = []
                 self.gs.ui_components_to_render['columns'] = [1,2,3,4,5,6,7]
