@@ -2557,3 +2557,265 @@
 07/05/2025 12:03:48 AM : INFO : [['h13', 238, 329], ['empty_col', 3]]
 07/05/2025 12:03:48 AM : INFO : Updating Game State
 07/05/2025 12:03:48 AM : INFO : Rendering Column 3
+07/05/2025 12:25:06 AM : INFO : Wait for few seconds connecting phone...
+07/05/2025 12:25:15 AM : INFO : Updating Game State
+07/05/2025 12:25:15 AM : INFO : Drawing a new card
+07/05/2025 12:25:15 AM : INFO : Rendering Column 1
+07/05/2025 12:25:16 AM : INFO : Rendering Column 2
+07/05/2025 12:25:16 AM : INFO : Rendering Column 3
+07/05/2025 12:25:16 AM : INFO : Rendering Column 4
+07/05/2025 12:25:17 AM : INFO : Rendering Column 5
+07/05/2025 12:25:17 AM : INFO : Rendering Column 6
+07/05/2025 12:25:17 AM : INFO : Rendering Column 7
+07/05/2025 12:25:18 AM : INFO : Calculating Action
+07/05/2025 12:25:18 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:18 AM : INFO : []
+07/05/2025 12:25:18 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:18 AM : INFO : []
+07/05/2025 12:25:18 AM : INFO : Updating Game State
+07/05/2025 12:25:19 AM : INFO : Drawing a new card
+07/05/2025 12:25:20 AM : INFO : Calculating Action
+07/05/2025 12:25:20 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:20 AM : INFO : []
+07/05/2025 12:25:20 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:20 AM : INFO : []
+07/05/2025 12:25:21 AM : INFO : Updating Game State
+07/05/2025 12:25:22 AM : INFO : Calculating Action
+07/05/2025 12:25:22 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:22 AM : INFO : []
+07/05/2025 12:25:22 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:22 AM : INFO : []
+07/05/2025 12:25:22 AM : INFO : Updating Game State
+07/05/2025 12:25:24 AM : INFO : Calculating Action
+07/05/2025 12:25:24 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:24 AM : INFO : []
+07/05/2025 12:25:24 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:24 AM : INFO : []
+07/05/2025 12:25:24 AM : INFO : Updating Game State
+07/05/2025 12:25:25 AM : INFO : Calculating Action
+07/05/2025 12:25:25 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:25 AM : INFO : []
+07/05/2025 12:25:25 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:25 AM : INFO : []
+07/05/2025 12:25:26 AM : INFO : Updating Game State
+07/05/2025 12:25:27 AM : INFO : Calculating Action
+07/05/2025 12:25:27 AM : INFO : Action: MoveCardToDeck
+07/05/2025 12:25:27 AM : INFO : [['s1', 535, 123]]
+07/05/2025 12:25:27 AM : INFO : Processing action: MoveCardToDeck
+07/05/2025 12:25:27 AM : INFO : [['s1', 535, 123]]
+07/05/2025 12:25:27 AM : INFO : ['s1', 535, 123]
+07/05/2025 12:25:27 AM : INFO : Updating Game State
+07/05/2025 12:25:27 AM : INFO : Calculating Action
+07/05/2025 12:25:27 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:27 AM : INFO : []
+07/05/2025 12:25:27 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:27 AM : INFO : []
+07/05/2025 12:25:28 AM : INFO : Updating Game State
+07/05/2025 12:25:29 AM : INFO : Calculating Action
+07/05/2025 12:25:29 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:29 AM : INFO : []
+07/05/2025 12:25:29 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:29 AM : INFO : []
+07/05/2025 12:25:30 AM : INFO : Updating Game State
+07/05/2025 12:25:31 AM : INFO : Calculating Action
+07/05/2025 12:25:31 AM : INFO : Action: DrawNewCard
+07/05/2025 12:25:31 AM : INFO : []
+07/05/2025 12:25:31 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:25:31 AM : INFO : []
+07/05/2025 12:25:32 AM : INFO : Updating Game State
+07/05/2025 12:25:34 AM : INFO : Calculating Action
+07/05/2025 12:25:34 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:34 AM : INFO : [['h13', 535, 123], ['empty_col', 1]]
+07/05/2025 12:25:34 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:34 AM : INFO : [['h13', 535, 123], ['empty_col', 1]]
+07/05/2025 12:25:34 AM : INFO : Updating Game State
+07/05/2025 12:25:36 AM : INFO : Rendering Column 1
+07/05/2025 12:25:36 AM : INFO : Calculating Action
+07/05/2025 12:25:36 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:36 AM : INFO : [['h13', 535, 123], ['empty_col', 2]]
+07/05/2025 12:25:36 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:36 AM : INFO : [['h13', 535, 123], ['empty_col', 2]]
+07/05/2025 12:25:36 AM : INFO : Updating Game State
+07/05/2025 12:25:37 AM : INFO : Rendering Column 2
+07/05/2025 12:25:37 AM : INFO : Calculating Action
+07/05/2025 12:25:37 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:37 AM : INFO : [['h13', 535, 123], ['empty_col', 3]]
+07/05/2025 12:25:37 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:37 AM : INFO : [['h13', 535, 123], ['empty_col', 3]]
+07/05/2025 12:25:38 AM : INFO : Updating Game State
+07/05/2025 12:25:38 AM : INFO : Rendering Column 3
+07/05/2025 12:25:39 AM : INFO : Calculating Action
+07/05/2025 12:25:39 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:39 AM : INFO : [['h13', 535, 123], ['empty_col', 4]]
+07/05/2025 12:25:39 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:39 AM : INFO : [['h13', 535, 123], ['empty_col', 4]]
+07/05/2025 12:25:39 AM : INFO : Updating Game State
+07/05/2025 12:25:39 AM : INFO : Rendering Column 4
+07/05/2025 12:25:40 AM : INFO : Calculating Action
+07/05/2025 12:25:40 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:40 AM : INFO : [['h13', 535, 123], ['empty_col', 5]]
+07/05/2025 12:25:40 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:40 AM : INFO : [['h13', 535, 123], ['empty_col', 5]]
+07/05/2025 12:25:40 AM : INFO : Updating Game State
+07/05/2025 12:25:41 AM : INFO : Rendering Column 5
+07/05/2025 12:25:41 AM : INFO : Calculating Action
+07/05/2025 12:25:41 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:41 AM : INFO : [['h13', 535, 123], ['empty_col', 6]]
+07/05/2025 12:25:41 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:41 AM : INFO : [['h13', 535, 123], ['empty_col', 6]]
+07/05/2025 12:25:41 AM : INFO : Updating Game State
+07/05/2025 12:25:42 AM : INFO : Rendering Column 6
+07/05/2025 12:25:42 AM : INFO : Calculating Action
+07/05/2025 12:25:42 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:42 AM : INFO : [['h13', 535, 123], ['empty_col', 7]]
+07/05/2025 12:25:42 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:42 AM : INFO : [['h13', 535, 123], ['empty_col', 7]]
+07/05/2025 12:25:43 AM : INFO : Updating Game State
+07/05/2025 12:25:43 AM : INFO : Rendering Column 7
+07/05/2025 12:25:44 AM : INFO : Calculating Action
+07/05/2025 12:25:44 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:44 AM : INFO : [['h11', 439, 371], ['c12', 338, 351]]
+07/05/2025 12:25:44 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:44 AM : INFO : [['h11', 439, 371], ['c12', 338, 351]]
+07/05/2025 12:25:44 AM : INFO : Updating Game State
+07/05/2025 12:25:45 AM : INFO : Rendering Column 4
+07/05/2025 12:25:46 AM : INFO : Rendering Column 5
+07/05/2025 12:25:46 AM : INFO : Calculating Action
+07/05/2025 12:25:46 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:46 AM : INFO : [['d8', 137, 309], ['s9', 439, 351]]
+07/05/2025 12:25:46 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:46 AM : INFO : [['d8', 137, 309], ['s9', 439, 351]]
+07/05/2025 12:25:46 AM : INFO : Updating Game State
+07/05/2025 12:25:47 AM : INFO : Rendering Column 2
+07/05/2025 12:25:47 AM : INFO : Rendering Column 5
+07/05/2025 12:25:47 AM : INFO : Calculating Action
+07/05/2025 12:25:47 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:47 AM : INFO : [['s10', 539, 393], ['h11', 339, 397]]
+07/05/2025 12:25:47 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:47 AM : INFO : [['s10', 539, 393], ['h11', 339, 397]]
+07/05/2025 12:25:47 AM : INFO : Updating Game State
+07/05/2025 12:25:49 AM : INFO : Rendering Column 4
+07/05/2025 12:25:49 AM : INFO : Rendering Column 6
+07/05/2025 12:25:49 AM : INFO : Calculating Action
+07/05/2025 12:25:49 AM : INFO : Action: MoveCardToDeck
+07/05/2025 12:25:49 AM : INFO : [['c1', 539, 372]]
+07/05/2025 12:25:49 AM : INFO : Processing action: MoveCardToDeck
+07/05/2025 12:25:49 AM : INFO : [['c1', 539, 372]]
+07/05/2025 12:25:49 AM : INFO : ['c1', 539, 372]
+07/05/2025 12:25:49 AM : INFO : Updating Game State
+07/05/2025 12:25:51 AM : INFO : Rendering Column 6
+07/05/2025 12:25:51 AM : INFO : Calculating Action
+07/05/2025 12:25:51 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:51 AM : INFO : [['s7', 539, 351], ['d8', 431, 395]]
+07/05/2025 12:25:51 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:51 AM : INFO : [['s7', 539, 351], ['d8', 431, 395]]
+07/05/2025 12:25:51 AM : INFO : Updating Game State
+07/05/2025 12:25:52 AM : INFO : Rendering Column 5
+07/05/2025 12:25:52 AM : INFO : Rendering Column 6
+07/05/2025 12:25:52 AM : INFO : Calculating Action
+07/05/2025 12:25:52 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:52 AM : INFO : [['h4', 540, 330], ['c5', 137, 287]]
+07/05/2025 12:25:52 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:52 AM : INFO : [['h4', 540, 330], ['c5', 137, 287]]
+07/05/2025 12:25:52 AM : INFO : Updating Game State
+07/05/2025 12:25:53 AM : INFO : Rendering Column 2
+07/05/2025 12:25:53 AM : INFO : Rendering Column 6
+07/05/2025 12:25:53 AM : INFO : Calculating Action
+07/05/2025 12:25:53 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:53 AM : INFO : [['d9', 539, 309], ['s10', 338, 444]]
+07/05/2025 12:25:53 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:53 AM : INFO : [['d9', 539, 309], ['s10', 338, 444]]
+07/05/2025 12:25:54 AM : INFO : Updating Game State
+07/05/2025 12:25:54 AM : INFO : Rendering Column 4
+07/05/2025 12:25:54 AM : INFO : Rendering Column 6
+07/05/2025 12:25:55 AM : INFO : Calculating Action
+07/05/2025 12:25:55 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:25:55 AM : INFO : [['h13', 531, 123], ['empty_col', 4]]
+07/05/2025 12:25:55 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:25:55 AM : INFO : [['h13', 531, 123], ['empty_col', 4]]
+07/05/2025 12:25:55 AM : INFO : Updating Game State
+07/05/2025 12:25:56 AM : INFO : Rendering Column 4
+07/05/2025 12:25:56 AM : INFO : Calculating Action
+07/05/2025 12:25:56 AM : INFO : Action: MoveCardToDeck
+07/05/2025 12:25:56 AM : INFO : [['d1', 640, 413]]
+07/05/2025 12:25:56 AM : INFO : Processing action: MoveCardToDeck
+07/05/2025 12:25:56 AM : INFO : [['d1', 640, 413]]
+07/05/2025 12:25:56 AM : INFO : ['d1', 640, 413]
+07/05/2025 12:25:56 AM : INFO : Updating Game State
+07/05/2025 12:25:57 AM : INFO : Rendering Column 7
+07/05/2025 12:25:57 AM : INFO : Calculating Action
+07/05/2025 12:25:57 AM : INFO : Action: MoveCardToDeck
+07/05/2025 12:25:57 AM : INFO : [['h1', 640, 393]]
+07/05/2025 12:25:57 AM : INFO : Processing action: MoveCardToDeck
+07/05/2025 12:25:57 AM : INFO : [['h1', 640, 393]]
+07/05/2025 12:25:57 AM : INFO : ['h1', 640, 393]
+07/05/2025 12:25:58 AM : INFO : Updating Game State
+07/05/2025 12:25:59 AM : INFO : Rendering Column 7
+07/05/2025 12:26:00 AM : INFO : Calculating Action
+07/05/2025 12:26:00 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:26:00 AM : INFO : [['d3', 640, 372], ['s4', 37, 288]]
+07/05/2025 12:26:00 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:26:00 AM : INFO : [['d3', 640, 372], ['s4', 37, 288]]
+07/05/2025 12:26:00 AM : INFO : Updating Game State
+07/05/2025 12:26:00 AM : INFO : Rendering Column 1
+07/05/2025 12:26:01 AM : INFO : Rendering Column 7
+07/05/2025 12:26:01 AM : INFO : Calculating Action
+07/05/2025 12:26:01 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:26:01 AM : INFO : [['h13', 535, 123], ['empty_col', 1]]
+07/05/2025 12:26:01 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:26:01 AM : INFO : [['h13', 535, 123], ['empty_col', 1]]
+07/05/2025 12:26:02 AM : INFO : Updating Game State
+07/05/2025 12:26:03 AM : INFO : Rendering Column 1
+07/05/2025 12:26:03 AM : INFO : Calculating Action
+07/05/2025 12:26:03 AM : INFO : Action: DrawNewCard
+07/05/2025 12:26:03 AM : INFO : []
+07/05/2025 12:26:03 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:26:03 AM : INFO : []
+07/05/2025 12:26:04 AM : INFO : Updating Game State
+07/05/2025 12:26:04 AM : INFO : Calculating Action
+07/05/2025 12:26:04 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:26:04 AM : INFO : [['s8', 535, 123], ['d9', 338, 490]]
+07/05/2025 12:26:04 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:26:04 AM : INFO : [['s8', 535, 123], ['d9', 338, 490]]
+07/05/2025 12:26:05 AM : INFO : Updating Game State
+07/05/2025 12:26:06 AM : INFO : Rendering Column 4
+07/05/2025 12:26:07 AM : INFO : Calculating Action
+07/05/2025 12:26:07 AM : INFO : Action: DrawNewCard
+07/05/2025 12:26:07 AM : INFO : []
+07/05/2025 12:26:07 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:26:07 AM : INFO : []
+07/05/2025 12:26:07 AM : INFO : Updating Game State
+07/05/2025 12:26:08 AM : INFO : Calculating Action
+07/05/2025 12:26:08 AM : INFO : Action: MoveCardToDeck
+07/05/2025 12:26:08 AM : INFO : [['c2', 535, 123]]
+07/05/2025 12:26:08 AM : INFO : Processing action: MoveCardToDeck
+07/05/2025 12:26:08 AM : INFO : [['c2', 535, 123]]
+07/05/2025 12:26:08 AM : INFO : ['c2', 535, 123]
+07/05/2025 12:26:08 AM : INFO : Updating Game State
+07/05/2025 12:26:09 AM : INFO : Calculating Action
+07/05/2025 12:26:09 AM : INFO : Action: DrawNewCard
+07/05/2025 12:26:09 AM : INFO : []
+07/05/2025 12:26:09 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:26:09 AM : INFO : []
+07/05/2025 12:26:10 AM : INFO : Updating Game State
+07/05/2025 12:26:11 AM : INFO : Calculating Action
+07/05/2025 12:26:11 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:26:11 AM : INFO : [['d10', 535, 123], ['s11', 238, 330]]
+07/05/2025 12:26:11 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:26:11 AM : INFO : [['d10', 535, 123], ['s11', 238, 330]]
+07/05/2025 12:26:11 AM : INFO : Updating Game State
+07/05/2025 12:26:12 AM : INFO : Rendering Column 3
+07/05/2025 12:26:12 AM : INFO : Calculating Action
+07/05/2025 12:26:12 AM : INFO : Action: MoveCardToColumn
+07/05/2025 12:26:12 AM : INFO : [['s9', 439, 351], ['d10', 238, 376]]
+07/05/2025 12:26:12 AM : INFO : Processing action: MoveCardToColumn
+07/05/2025 12:26:12 AM : INFO : [['s9', 439, 351], ['d10', 238, 376]]
+07/05/2025 12:26:12 AM : INFO : Updating Game State
+07/05/2025 12:26:13 AM : INFO : Rendering Column 3
+07/05/2025 12:26:13 AM : INFO : Rendering Column 5
+07/05/2025 12:26:13 AM : INFO : Calculating Action
+07/05/2025 12:26:13 AM : INFO : Action: DrawNewCard
+07/05/2025 12:26:13 AM : INFO : []
+07/05/2025 12:26:13 AM : INFO : Processing action: DrawNewCard
+07/05/2025 12:26:13 AM : INFO : []
+07/05/2025 12:26:15 AM : INFO : Updating Game State
