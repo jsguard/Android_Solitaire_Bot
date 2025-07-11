@@ -28,15 +28,11 @@ An automated bot that plays the Solitaire card game on Android devices using sim
    Run:
    ```bash
    ./install.sh
-3. **Install project dependencies**  
-   Open a terminal and run:
-   ```bash
-   pip install -r requirements.txt
-4. **Prepare your Android phone**
+3. **Prepare your Android phone**
    - Connect your phone to the PC via USB
    - Enable Developer Options and USB Debugging
 
-5. Install the Solitaire game on your phone
+4. Install the Solitaire game on your phone
    [Solitaire - Classic Card Games (Google Play Store)](https://play.google.com/store/apps/details?id=com.smilerlee.klondike&hl=en)
 
 ## Running the Bot
@@ -44,11 +40,6 @@ An automated bot that plays the Solitaire card game on Android devices using sim
 2. Launch the Solitaire app on the phone.
 3. Run the bot by executing:
    ```bash
-   python main.py
+   ./run_bot.sh
 ## Demo Video
 https://github.com/user-attachments/assets/31bc60cd-9393-4b89-a5df-42173be71de6
-
-
-
-
-

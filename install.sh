@@ -3,7 +3,6 @@
 # Get script directory
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 DEST_DIR="$SCRIPT_DIR/platform-tools"
-ANDROID_BRIDGE_DIR="$SCRIPT_DIR/android_bridge.dll"
 
 # Detect OS
 case "$(uname -s)" in
@@ -21,31 +20,33 @@ case "$OS_TYPE" in
 esac
 
 echo "Detected OS: $OS_TYPE"
-echo "Downloading from: $SDK_URL"
 
-# Change to script directory
-cd "$SCRIPT_DIR"
+# Skip download if platform-tools already exists
+if [ -d "$DEST_DIR" ]; then
+    echo "Platform Tools already installed in: $DEST_DIR"
+else
+    echo "Downloading from: $SDK_URL"
 
-# Download
-curl -L -o platform-tools.zip "$SDK_URL"
+    # Change to script directory
+    cd "$SCRIPT_DIR"
 
-# Remove any existing folder before extracting
-rm -rf "$DEST_DIR"
+    # Download
+    curl -L -o platform-tools.zip "$SDK_URL"
 
-# Extract
-echo "Extracting..."
-unzip -q platform-tools.zip -d "$SCRIPT_DIR"
-rm platform-tools.zip
+    # Remove any existing folder before extracting
+    rm -rf "$DEST_DIR"
 
-echo "Platform Tools installed in: $DEST_DIR"
+    # Extract
+    echo "Extracting..."
+    unzip -q platform-tools.zip -d "$SCRIPT_DIR"
+    rm platform-tools.zip
+
+    echo "Platform Tools installed in: $DEST_DIR"
+fi
+
 echo ""
 echo "To use adb or fastboot, add this to your PATH:"
 echo "export PATH=\"\$PATH:$DEST_DIR\""
 
-# Copy the file
-if [ -f "$ANDROID_BRIDGE_DIR" ]; then
-    cp "$ANDROID_BRIDGE_DIR" "$DEST_DIR/"
-    echo "Copied $(basename "$ANDROID_BRIDGE_DIR") to $DEST_DIR"
-else
-    echo "File not found: $ANDROID_BRIDGE_DIR"
-fi
+echo "Installing dependencies"
+pip install -r requirements.txt
