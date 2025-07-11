@@ -1,0 +1,1 @@
+curl -O https://dl.google.com/android/repository/platform-tools-latest-windows.zip
